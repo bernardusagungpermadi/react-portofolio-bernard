@@ -1,0 +1,235 @@
+.home_container {
+    row-gap: 7rem;
+}
+
+.home__content{
+    display: grid;
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home__social-icon{
+    font-size: 1.25rem;
+    color: var(--color-neutral02);
+}
+
+.home__social-icon:hover {
+    color: black;
+}
+
+.home__title{
+    margin-bottom: 2rem;
+}
+
+.home__subtitle {
+    position: relative;
+    font-size: 1.5rem;
+    padding-left: 4rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.home__subtitle::before {
+    content: '';
+    position: absolute;
+    width: 6vw;
+    height: 1px;
+    background-color: var(--color-neutral02);
+    left: 0;
+    top: 0.6rem;
+}
+
+.home__description {
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+.home__img {
+    background: url(../../assets/agung.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    order: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    animation: profile__animate 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 40%;
+    }
+
+    25% {
+        border-radius: 50% 60% 35% 55% / 55% 55% 45% 55%;
+    }
+
+    50% {
+        border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%;
+    }
+
+    75% {
+        border-radius: 55% 55% 45% 55% / 50% 60% 35% 55%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 40%;
+    }
+}
+
+
+.home__scroll {
+    margin-left: 9.25rem;
+}
+
+.home__scroll-button {
+  align-items: center;
+}
+
+.home__scroll-mouse {
+  font-size: 24px;
+}
+
+.wheel {
+    animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(3.75rem);
+    }
+    
+}
+
+.home__scroll-name {
+    color: var(--color-neutral02);
+    font-weight: 500;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.home__scroll-arrow{
+    font-size: 1.25rem;
+    color: var(--color-neutral02);
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .home_container {
+      row-gap: 7rem;
+    }
+  
+    .home__content {
+      grid-template-columns: 116px repeat(2, 1fr);
+      padding-top: 5.5rem;
+      column-gap: 2rem;
+      align-items: center;
+    }
+  
+    .home__social {
+      grid-template-columns: max-content;
+      row-gap: 1rem;
+    }
+  
+    .home__subtitle {
+      padding-left: 5.4rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .home__img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .home_container {
+      row-gap: 5rem;
+    }
+  
+    .home__content {
+      grid-template-columns: 100px repeat(2, 1fr);
+      padding-top: 4rem;
+      column-gap: 1.5rem;
+      align-items: center;
+    }
+  
+    .home__social {
+      grid-template-columns: max-content;
+      row-gap: 0.75rem;
+    }
+  
+    .home__subtitle {
+      padding-left: 4.2rem;
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+  
+    .home__img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .home_container {
+      row-gap: 3rem;
+    }
+  
+    .home__content {
+      display: block;
+      text-align: center;
+      padding-top: 3rem;
+    }
+  
+    .home__social {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      row-gap: 0.5rem;
+      top: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .home__subtitle {
+      padding-left: 0;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .home__description {
+      max-width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  
+    .home__img {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+  
+    .home__scroll {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+  
