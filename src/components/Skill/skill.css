@@ -11,11 +11,11 @@
   }
   
   .skills__content{
-    background-color: white;
+    background-color: var(--color-primary);
     border: 1 solid rgba(0, 0, 0, 0.1);
     padding: 2rem;
     border-radius: 1.25rem;
-    box-shadow:6px 2px 4px inset rgba(0, 0, 0, 0.1);
+    box-shadow:2px 0px 2px inset rgba(0, 0, 0, 0.1);
   }
 
   .skills__title{
