@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import AboutImg from '../../assets/agung.png';
+import AboutImg from '../../assets/agung.jpeg';
 import CV from '../../assets/Bernard-cv.pdf';
 import Info from './Info';
 import { Button } from 'reactstrap';

@@ -53,11 +53,12 @@
 }
 
 .home__img {
-    background: url(../../assets/agung.png);
+    background: url(../../assets/agung.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    background-size: 300px;
+    background-position-y: 0.3px;
+    box-shadow: inset 0 0 0 9px rgba(104, 102, 102, 0.3);
     order: 1;
     justify-self: center;
     width: 300px;
